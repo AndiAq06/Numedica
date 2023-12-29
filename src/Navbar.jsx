@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "/public/img/Numedica.png";
+import logo from "/img/NuMedica.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
