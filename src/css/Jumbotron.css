@@ -1,0 +1,60 @@
+/* Bagian Jumbotron */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom yang setara lebar */
+  gap: 20px; /* Jarak antara kolom */
+  max-width: 800px; /* Atur lebar maksimum */
+  margin: 0 auto; /* Pusatkan di tengah */
+  padding: 20px;
+}
+
+.text-container {
+  margin-top: 50px;
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.text-container a {
+  margin-bottom: 50px;
+  width: 250px;
+  height: 35px;
+  background-color: #263138;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container h2 {
+  font-weight: 600;
+  color: #445964;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%; /* Gambar tidak melebihi lebar container */
+  height: auto;
+  border-radius: 8px; /* Sudut bulat pada gambar */
+}
+
+.support {
+  display: flex;
+  align-items: center;
+}
+
+.support img {
+  height: 45px;
+  width: 45px;
+  padding-left: 20px;
+}

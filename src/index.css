@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar .title {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .title .logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.navbar h1 {
+  color: #445964;
+  font-size: 20px;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar .links ul {
+  display: flex;
+}
+
+.navbar .links ul li {
+  list-style: none;
+}
+
+.navbar a {
+  /* margin-left: 16px; */
+  text-decoration: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #445964;
+  font-weight: 500;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.dropdown-content a {
+  color: #445964;
+  padding: 8px 3px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Membuat garis d bawhah menu */
+.navbar a {
+  /* margin-left: 16px; */
+  text-decoration: none;
+  padding: 15px;
+  font-size: 16px;
+  color: #445964;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background-color: #445964;
+  transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Bagian card */
+.container {
+  margin-top: 150px;
+}
+.container .lecture {
+  margin-top: 100px;
+  color: #445964;
+  font-size: 35px;
+  text-align: center;
+}
+
+.container .capt {
+  color: #737373;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 23px;
+}
+
+.card img {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card p {
+  margin-top: 23px;
+}
+
+/* bagian contact */
+
+.contact-us {
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.contact-us h2 {
+  margin-top: 100px;
+  color: #445964;
+  font-size: 35px;
+  text-align: center;
+}
+
+.contact-us p {
+  color: #737373;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin: 10px 0;
+}
+
+input,
+textarea {
+  width: 350px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #445964;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #445964;
+  color: #fff;
+  margin-top: 20px;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* bagian Footer */
+footer {
+  margin-top: 70px;
+  background-color: #263138;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .top-section {
+  margin: 10px;
+}
+
+/* bagian artickle list */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+.article {
+  margin-top: 50px;
+}
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 5px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+}
+
+.blog-preview .article {
+  color: #263138;
+}
+
+.blog-preview a {
+  text-decoration: none;
+  color: #445964;
+}
+
+/* bagian article list */
+.container-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.container-box .judul {
+  margin-top: 50px;
+  font-size: 30px;
+  color: #445964;
+  /* margin-bottom: 10px; */
+}
+
+.container-box h3 {
+  color: #445964;
+}
+
+.container-box p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.container-box .content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.container-box .content .img {
+  width: 350px;
+  height: 250px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.content .code .box {
+  margin-top: 10px;
+  background-color: #f2f2f2 !important;
+  padding: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.content .box h4 {
+  padding: 10px;
+}
+
+.tutorial {
+  background-color: #f2f2f2 !important;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 300px;
+}
+
+.dataset {
+  margin: 30px 0;
+}
+
+.dataset .image {
+  width: 100%;
+  height: 100%;
+}
+
+.dataset .plot {
+  width: 55%;
+  height: 55%;
+}
+
+hr {
+  margin: 10px 0;
+  border: 1.2px solid #222;
+}
+
+/* bagian tabel */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+/* bagian realated post */
+.container-box .related-post h2 {
+  font-size: 30px;
+  color: #445964;
+}

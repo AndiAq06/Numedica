@@ -1,0 +1,18 @@
+{
+  "contact": [
+    {
+      "id": 1,
+      "fullName": "Andi",
+      "email": "andi@gmail.com",
+      "phoneNumber": "082343757829",
+      "message": "Tolong buatkan materi persamaan kuadrat"
+    },
+    {
+      "fullName": "Andi Ardiansyah Nasir",
+      "email": "andiaso@gmail.com",
+      "phoneNumber": "082343757829",
+      "message": "Tolong buatkan saya materi Transformer",
+      "id": 2
+    }
+  ]
+}
