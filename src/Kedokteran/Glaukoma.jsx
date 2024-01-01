@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/cjs/react-router-dom";
 import glukoma1 from "/img/glukoma1.jpeg";
 import glukoma2 from "/img/glukoma2.jpeg";
 import glukoma3 from "/img/glukoma3.jpeg";
@@ -8,6 +9,9 @@ import glukoma7 from "/img/glukoma7.jpeg";
 import glukoma8 from "/img/glukoma8.jpeg";
 
 const Glaukoma = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="container-box">
       <div className="introduction">
@@ -23,61 +27,48 @@ const Glaukoma = () => {
       </div>
       <hr />
       <div className="content">
-        <ol>
+        <ul>
           <li>
+            {" "}
             <span>Glaukoma Sudut Terbuka Primer (POAG) </span>
-            <img className="img" src={glukoma1} />
-            <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://images.app.goo.gl/3tKWfgZfW4wTx4U59</p>
-            <ul>
-              <li>
-                <span>Definisi : Glaukoma yang terjadi karena adanya masalah pada saluran keluar aquos humor.</span>
-              </li>
-              <li>
-                TIO <span> ≥ 22 mmHg – 30 mmHg</span>
-              </li>
-              <li>
-                <span>
-                  Sifat perlangsungan : Kronis, Progresif <span>-&gt;</span> Semakin lama akan semakin memburuk
-                </span>
-              </li>
-              <li>
-                <span>Gejala Klinis : Bersifat asimptomatis pada tahap awal </span>(tidak ada nyeri, tidak ada sakit kepala, tidak ada mual muntah, tidak ada mata merah), <span>pada tahap yang lebih advance</span> akan timbul loss vision di
-                lapangan pandang bagian perifer sehingga <span>akan tampak seperti tunnel vision.</span>
-              </li>
-              <li>
-                <span>Triad of symptomps : </span>
-                <ol>
-                  <li>
-                    <span> &gt; TIO</span>
-                  </li>
-                  <li>
-                    <span>↑ CDR ( CDR &gt; 0,5)</span>
-                  </li>
-                  <li>
-                    <span>Tunnel Vision</span>
-                  </li>
-                </ol>
-              </li>
-              <li>
-                <span>Patofisiologi : </span>Karena adanya masalah pada saluran keluar dari aquous humor <span>-&gt;</span> penumpukan aquous humor di COA <span>-&gt;</span> peningkatan tekanan intraocular secara progresif{" "}
-                <span>-&gt;</span> disfungsi vaskuler (menyebabkan iskemia saraf optik) dan disfungsi mekanis (menyebabkan kompresi akson) <span>-&gt;</span> Irreversible peripheral visual loss
-              </li>
-              <li>
-                <span>Penegakan Diagnosis</span>
-                <p>- Tes Lapang Pandang (untuk menilai apakah terdapat kehilangan penglihatan perifer)</p>
-                <p>- Goneoskopi (untuk mengukur berapa TIOnya)</p>
-              </li>
-              <li>
-                <span>Medikamentosa</span>
-                <ol>
-                  <li>Prostaglandin analog 1×1 (Pemberiannya pada malam hari) (Untuk melancarkan aliran aquous humor melalui trabecular meshwork atau melalui uveasklera pathway)</li>
-                  <li>Tetes Timolol 0,25% - 0,5% 2×1 / Tetes Betaksolol 0,2% - 0,5% 2×1 (Untuk hambat Produksi)</li>
-                  <li>Asetazolamid Tablet 125-250 mg 4×1 (Menghambat produksi secara langsung dari aquous humor karena berperan sebagai Carbonic anhidrase inhibitor)</li>
-                  <li>Apabila sudah dalam tahap yang lebih lanjut atau tidak membaik dengan pengobatan maka perlu dilakukan tindakan seperti : Laser trabekuloplasti, Tindakan bedah (trabekulektomi)</li>
-                </ol>
-              </li>
-            </ul>
           </li>
+        </ul>
+
+        <ul>
+          <img className="img" src={glukoma1} />
+          <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://images.app.goo.gl/3tKWfgZfW4wTx4U59</p>
+          <li>
+            <span>Definisi : Glaukoma yang terjadi karena adanya masalah pada saluran keluar aquos humor.</span>
+          </li>
+          <li>
+            TIO <span> ≥ 22 mmHg – 30 mmHg</span>
+          </li>
+          <li>
+            <span>
+              Sifat perlangsungan : Kronis, Progresif <span>-&gt;</span> Semakin lama akan semakin memburuk
+            </span>
+          </li>
+          <li>
+            <span>Gejala Klinis : Bersifat asimptomatis pada tahap awal </span>(tidak ada nyeri, tidak ada sakit kepala, tidak ada mual muntah, tidak ada mata merah), <span>pada tahap yang lebih advance</span> akan timbul loss vision di
+            lapangan pandang bagian perifer sehingga <span>akan tampak seperti tunnel vision.</span>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span>Triad of symptomps : </span>
+          </li>
+          <ol>
+            <li>
+              <span> &gt; TIO</span>
+            </li>
+            <li>
+              <span>↑ CDR ( CDR &gt; 0,5)</span>
+            </li>
+            <li>
+              <span>Tunnel Vision</span>
+            </li>
+          </ol>
+
           <hr />
           <li>
             <span>Glaukoma Sudut Tertutup Primer (PCAG)</span>
@@ -128,11 +119,12 @@ const Glaukoma = () => {
               </li>
               <li>
                 <span>Terapi :</span>
-                <p>- Iridektomi/laser : 48 – 72 jam</p>
+                <p>- Iridektomi/laser : &lt; 48 – 72 jam</p>
                 <p>- Trabekulektomi : 48-72 jam</p>
               </li>
             </ul>
           </li>
+
           <hr />
           <li>
             <span>Normo Tension Glaukoma (NTG)</span>
@@ -184,14 +176,14 @@ const Glaukoma = () => {
               </ol>
               <p>
                 <span>- Hifema :</span> Terdapatnya darah yang menyumbat Trabekular Meshwork, sehingga dapat menyebabkan glaucoma sudut terbuka sekunder.
-                <img className="img" src={glukoma5} />
-                <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://images.app.goo.gl/rDSnXiJ62YdbwBDeA</p>
               </p>
+              <img className="img" src={glukoma5} />
+              <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://images.app.goo.gl/rDSnXiJ62YdbwBDeA</p>
               <p>
                 <span>- Uveitis : </span> Terdapat dua mekanisme yang dapat menyebabkan glaukoma
-                <img className="img" src={glukoma6} />
-                <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://images.app.goo.gl/VqZ6msZXnpPrMMCy5</p>
               </p>
+              <img className="img" src={glukoma6} />
+              <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://images.app.goo.gl/VqZ6msZXnpPrMMCy5</p>
               <ol>
                 <li>
                   <span>
@@ -211,23 +203,24 @@ const Glaukoma = () => {
               </p>
               <p>
                 <span>- Rubeoisis Iridis : Komplikasi dari DM, yaitu timbulnya jaringan fibrovaskular di sudut mata depan</span>
-                <img className="img" src={glukoma7} />
-                <p style={{ fontStyle: "italic", marginBottom: "20px" }}>src: https://images.app.goo.gl/FkdBEUuJEAbapjHX8</p>
               </p>
+              <img className="img" src={glukoma7} />
+              <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://images.app.goo.gl/FkdBEUuJEAbapjHX8</p>
               <p>
                 <span>
                   - Sublukasis lensa anterior : Posisi lensa yang lebih kearah anterior <span>-&gt;</span> Menutup celah iris dan lensa Glaukoma sudut tertutup sekunder
                 </span>
-                <img className="img" src={glukoma8} />
-                <p style={{ fontStyle: "italic", marginBottom: "20px" }}>src: https://images.app.goo.gl/3M8umapJqi28DFk79</p>
               </p>
-
-              <li>
-                <span>Tatalaksana : Obati causanya</span>
-              </li>
+              <img className="img" src={glukoma8} />
+              <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://images.app.goo.gl/3M8umapJqi28DFk79</p>
             </ul>
           </li>
-        </ol>
+        </ul>
+        <ul>
+          <li>
+            <span>Tatalaksana : Obati causanya</span>
+          </li>
+        </ul>
       </div>
 
       <div className="related-post">
@@ -235,10 +228,19 @@ const Glaukoma = () => {
         <div className="article-list">
           <ul>
             <li>
-              <a href="/blefaritis">Blefaritis | Kedokteran</a>
+              <Link to="/blefaritis" onClick={handleLinkClick}>
+                Blefaritis | Kedokteran
+              </Link>
             </li>
             <li>
-              <a href="/entropion">Entropion | Kedokteran</a>
+              <Link to="/entropion" onClick={handleLinkClick}>
+                Entropion | Kedokteran
+              </Link>
+            </li>
+            <li>
+              <Link to="/ektropion" onClick={handleLinkClick}>
+                Ektropion | Kedokteran
+              </Link>
             </li>
           </ul>
         </div>

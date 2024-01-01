@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import blefaritis1 from "/img/blefaritis1.jpeg";
 import blefaritis2 from "/img/blefaritis2.jpeg";
 import blefaritis3 from "/img/blefaritis3.jpeg";
@@ -6,6 +7,9 @@ import blefaritis5 from "/img/blefaritis5.jpeg";
 import blefaritis6 from "/img/blefaritis6.jpeg";
 
 const Blefaritis = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="container-box">
       <div className="introduction">
@@ -43,43 +47,41 @@ const Blefaritis = () => {
           <img className="img" src={blefaritis3} />
           <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src:https://images.app.goo.gl/RvPzcV2JNwTxFDrn8</p>
           <p>Blefaritis seboroik sering merupakan bagian dari keadaan dermatitis seboroik generalisata yang diderita pasien. Dikaitkan dengan adanya koloni Pityrosporum ovale, namun masih belum jelas hubungan kausalitasnya.</p>
-
           <li>
             <span>Blefaritis Posterior </span>
           </li>
           <img className="img" src={blefaritis4} />
-          <p style={{ fontStyle: "italic", textAlign: "center" }}>src:https://images.app.goo.gl/BaNrddWCKgaYjbm89</p>
-          <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>Sekresi meibom seperti pasta gigi</p>
+          <p style={{ fontStyle: "italic", textAlign: "center", margin: "0px" }}>src:https://images.app.goo.gl/BaNrddWCKgaYjbm89</p>
+          <p style={{ fontStyle: "italic", marginTop: "0px", marginBottom: "20px", textAlign: "center" }}>Sekresi meibom seperti pasta gigi</p>
           <p>
             Blefaritis posterior merupakan inflamasi sekunder kelopak mata yang terjadi karena disfungsi atau gangguan pengeluaran secret kelenjar meibom (secret kelenjar meibom disebut meibom) dan kelenjar Zeis. Kolonisasi bakteri akan
             menghasilkan asam lemak bebas, yang dapat meningkatkan titik leleh kelenjar meibom, akibatnya kelenjar meibom akan mensekresikan secret yang lebih kental. Kondisi ini dapat menyebabkan sumbatan pada kelenjar meibom, sehingga
             sulit untuk mensekresikan sekretnya. Berkurangnya produksi dari kelenjar meibom dapat menurunkan kandungan fosfolipid yang berperan sebagai surfaktan di dalam tirai air mata (tear film), sehingga penguapan dan osmolaritas tirai
             air mata akan meningkat, tirai air mata menjadi tidak stabil, sehingga terjadi gesekan yang menyebabkan iritasi konjungtiva dan kornea, serta memudahkan kolonisasi dari Staphylococcus aureus.
-            <img className="img" src={blefaritis5} />
-            <p style={{ fontStyle: "italic", textAlign: "center" }}>src:https://images.app.goo.gl/eAau43BXS2qaEHuf8</p>
-            <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>Penumpukan meibom tambak seperti tetesan minyak di orifisium kelenjar meibom</p>
           </p>
+          <img className="img" src={blefaritis5} />
+          <p style={{ fontStyle: "italic", textAlign: "center", margin: "0px" }}>src:https://images.app.goo.gl/eAau43BXS2qaEHuf8</p>
+          <p style={{ fontStyle: "italic", marginTop: "0px", marginBottom: "20px", textAlign: "center" }}>Penumpukan meibom tambak seperti tetesan minyak di orifisium kelenjar meibom</p>
 
-          <ul>
-            <li>
-              <span>Manifestasi Klinis Blefaritis Anterior dan Posterior</span>
-            </li>
-            <li>
-              <span>Tatalaksana Blefaritis Anterior dan Posterior</span>
-            </li>
-            <table>
+          <li>
+            <span>Tatalaksana Blefaritis Anterior dan Posterior</span>
+          </li>
+          <table>
+            <thead>
               <tr>
                 <th>Terapi</th>
                 <th>Blefaritis Anterior</th>
                 <th>Blefaritis Posterior</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
                 <td>Non-Farmakologik</td>
                 <td>
                   <p>Mengompres kelopak mata dengan air hangat selama 5-10 menit untuk melunakkan krusta dan mengencerkan meibom.</p>
                   <p>Kapas lidi yang dicelupkan dalam larutan shampoo bayi (diencerkan dalam air dengan perbandingan 1:1) untuk membersihkan krusta.</p>
                 </td>
-                <td>Mengompres kelopak mata dengan air hangat selama 5-10 menit untuk melunakkan krusta dan mengencerkan meibom, kemudian meibom yang menumpuk dikeluarkan dengan cara “memeras” kelopak mata kea rah tepi.</td>
+                <td>Mengompres kelopak mata dengan air hangat selama 5-10 menit untuk melunakkan krusta dan mengencerkan meibom, kemudian meibom yang menumpuk dikeluarkan dengan cara “memeras” kelopak mata ke arah tepi.</td>
               </tr>
               <tr>
                 <td>Farmakologik</td>
@@ -88,10 +90,10 @@ const Blefaritis = () => {
                   <p>Pemberian air mata tambahan 4-8 kali sehari untuk mengurangi gejala mata kering.</p>
                   <p>Tetes mata steroid diberikan apabila terdapat konjungtivitis papiler atau keratitis marginalis (Fluorometolon 0,1% tiap 6 jam).</p>
                 </td>
-                <td>Antibiotik oral (doksisiklin 2×100 mg atau tetrasklin 4×250 mg. Apabila terdapat kontaindikasi terhadap antibiotic tersebut maka alternatifnya dapat diberikan eritromisin 4×500 mg).</td>
+                <td>Antibiotik oral (doksisiklin 2×100 mg atau tetrasklin 4×250 mg. Apabila terdapat kontaindikasi terhadap antibiotik tersebut, maka alternatifnya dapat diberikan eritromisin 4×500 mg).</td>
               </tr>
-            </table>
-          </ul>
+            </tbody>
+          </table>
         </ol>
       </div>
 
@@ -100,10 +102,19 @@ const Blefaritis = () => {
         <div className="article-list">
           <ul>
             <li>
-              <a href="/glaukoma">Glaukoma | Kedokteran</a>
+              <Link to="/glaukoma" onClick={handleLinkClick}>
+                Glaukoma | Kedokteran
+              </Link>
             </li>
             <li>
-              <a href="/entropion">Entropion | Kedokteran</a>
+              <Link to="/entropion" onClick={handleLinkClick}>
+                Entropion | Kedokteran
+              </Link>
+            </li>
+            <li>
+              <Link to="/ektropion" onClick={handleLinkClick}>
+                Ektropion | Kedokteran
+              </Link>
             </li>
           </ul>
         </div>

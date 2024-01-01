@@ -120,25 +120,23 @@ const Barplot = () => {
             </code>
           </pre>
           <img src={barplot3} />
-          <p>
-            <ul>
-              <li>
-                Argumen cex.main, cex.lab, dan cex.axis: Mengontrol ukuran font dari judul grafik, label sumbux-x, dan label sumbu-y, secara berturut-turut. Mereka diatur menjadi 1.5, 1.2, dan 1.1 untuk meningkatkan ukuran font guna
-                memudahkan pembacaan.
-              </li>
-              <li>
-                Fungsi text(): Digunakan untuk menambahkan label data di atas setiap batang. Argumen x menentukan koordinat-x dari label (sama dengan koordinat-x barplot()), argumen y menambahkan nilai 1 terhadap tinggi batang yang sesuai
-                (A + 1) untuk menempatkan label tepat di atas batang.
-              </li>
-            </ul>
-          </p>
+          <ul>
+            <li>
+              Argumen cex.main, cex.lab, dan cex.axis: Mengontrol ukuran font dari judul grafik, label sumbux-x, dan label sumbu-y, secara berturut-turut. Mereka diatur menjadi 1.5, 1.2, dan 1.1 untuk meningkatkan ukuran font guna
+              memudahkan pembacaan.
+            </li>
+            <li>
+              Fungsi text(): Digunakan untuk menambahkan label data di atas setiap batang. Argumen x menentukan koordinat-x dari label (sama dengan koordinat-x barplot()), argumen y menambahkan nilai 1 terhadap tinggi batang yang sesuai (A
+              + 1) untuk menempatkan label tepat di atas batang.
+            </li>
+          </ul>
         </div>
 
         <div className="dataset">
           <h3>Membuat grouped Bar-Chart</h3>
           <li>
             Ambil nilai vektor dan jadikan matriks M yang akan dikelompokkan atau ditumpuk. Pembuatan matriks dapat dilakukan dengan cara.
-            <pre>
+            <pre className="tutorial">
               <code>
                 {`
                 M <- matrix(c(values...), nrow = no_of_rows, ncol = no_of_column, byrow = TRUE)
@@ -216,10 +214,10 @@ const Barplot = () => {
         <div className="article-list">
           <ul>
             <li>
-              <a href="/boxplot-in-r-studio">Boxplot | R Studio</a>
+              <Link to="/boxplot-r-studio">Boxplot | R Studio</Link>
             </li>
             <li>
-              <a href="/pie-chart-r">Pie Chart | R Studio</a>
+              <Link to="/pie-chart-r-studio">Pie Chart | R Studio</Link>
             </li>
           </ul>
         </div>

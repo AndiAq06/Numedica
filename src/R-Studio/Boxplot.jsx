@@ -3,6 +3,7 @@ import boxplot from "/img/boxplot.jpg";
 import boxplot2 from "/img/boxplot2.png";
 import boxplot3 from "/img/boxplot3.jpeg";
 import boxplot4 from "/img/boxplot4.jpeg";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Boxplot = () => {
   return (
@@ -166,10 +167,10 @@ const Boxplot = () => {
         <div className="article-list">
           <ul>
             <li>
-              <a href="/barplot-in-r-studio">Bar-Chart | R Studio</a>
+              <Link to="/barplot-r-studio">Bar-Chart | R Studio</Link>
             </li>
             <li>
-              <a href="/pie-chart-r">Pie Chart | R Studio</a>
+              <Link to="/pie-chart-r-studio">Pie Chart | R Studio</Link>
             </li>
           </ul>
         </div>

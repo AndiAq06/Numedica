@@ -7,49 +7,51 @@
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  background-color: #f0f0f0;
+  position: relative;
 }
 
-.navbar .title {
+.title {
   display: flex;
   align-items: center;
 }
 
-.navbar .title .logo {
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+.hamburger {
+  font-size: 25px;
+}
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.links li {
+  margin-bottom: 10px; /* Menambahkan jarak antara link */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-}
-
-.navbar h1 {
-  color: #445964;
-  font-size: 20px;
-}
-
-.navbar .links {
-  margin-left: auto;
-}
-
-.navbar .links ul {
-  display: flex;
-}
-
-.navbar .links ul li {
-  list-style: none;
-}
-
-.navbar a {
-  /* margin-left: 16px; */
-  text-decoration: none;
-  padding: 15px;
-  font-size: 16px;
-  color: #445964;
-  font-weight: 500;
 }
 
 .dropdown {
@@ -294,8 +296,13 @@ span {
   padding: 10px;
 }
 
+.content ul {
+  margin-bottom: 20px;
+}
+
 .tutorial {
   background-color: #f2f2f2 !important;
+  overflow-x: auto;
 }
 
 img {
@@ -346,4 +353,146 @@ th {
 .container-box .related-post h2 {
   font-size: 30px;
   color: #445964;
+}
+
+@media only screen and (max-width: 776px) {
+  /* bagian navbar */
+  .menu-toggle {
+    display: block;
+    padding: 10px;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+
+  .links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .links ul li {
+    padding: 10px;
+  }
+
+  .links.open {
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    order: -1; /* Menggeser logo ke kiri */
+  }
+
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    width: 0;
+    background-color: #445964;
+    transition: width 0.3s;
+    margin-bottom: 10px;
+  }
+
+  .dropdown .dropdown-content {
+    display: block;
+    /* ... gaya lainnya ... */
+  }
+
+  /* bagian jumpbotron */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Dua kolom yang setara lebar */
+    place-items: center;
+  }
+
+  .grid-container .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .text-container a {
+    margin-bottom: 10px;
+  }
+
+  .grid-container .image-container img {
+    display: none;
+  }
+
+  /* bagian card */
+  .container {
+    margin-top: 0px;
+  }
+
+  .container .lecture {
+    margin-top: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* bagian article */
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .container-box {
+    margin: 10px;
+  }
+
+  .blog-preview {
+    width: 80%; /* Mengatur lebar blog preview untuk layar kecil */
+    margin: 0 auto; /* Pusatkan blog preview pada layar kecil */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    word-break: break-all;
+  }
+
+  /* bagian image */
+  img {
+    width: 300px;
+    height: 230px;
+  }
+
+  .container-box .content .img {
+    width: 350px;
+    height: 250px;
+  }
 }

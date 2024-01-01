@@ -20,6 +20,7 @@ import Entropion from "./Kedokteran/Entropion.jsx";
 import ArticlePemprogramanList from "./Pemprograman/ArticlePemprogramanList.jsx";
 import Synchronous from "./Pemprograman/Synchronous&Asynchronous.jsx";
 import Javascript from "./Pemprograman/JavascriptvsTypescript.jsx";
+import Ektropion from "./Kedokteran/Ektropion.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -80,6 +81,9 @@ function App() {
               </Route>
               <Route path="/entropion">
                 <Entropion></Entropion>
+              </Route>
+              <Route path="/ektropion">
+                <Ektropion></Ektropion>
               </Route>
             </Switch>
           </div>

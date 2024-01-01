@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/cjs/react-router-dom";
 import javascript from "/img/typescript-vs-javascript-comparison_.jpg";
 
 const Javascript = () => {
@@ -89,10 +90,10 @@ const Javascript = () => {
         <div className="article-list">
           <ul>
             <li>
-              <a href="/synchronous-asynchronous">Perbedaan Synchronous dan Asynchronous</a>
+              <Link to="/synchronous-asynchronous">Perbedaan Synchronous dan Asynchronous</Link>
             </li>
             <li>
-              <a href="/pie-chart-r">Pie Chart | R Studio</a>
+              <Link to="/pie-chart-r-studio">Pie Chart | R Studio</Link>
             </li>
           </ul>
         </div>

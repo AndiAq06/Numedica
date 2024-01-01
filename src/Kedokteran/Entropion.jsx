@@ -5,8 +5,12 @@ import entropion4 from "/img/entropion4.jpeg";
 import entropion5 from "/img/entropion5.jpeg";
 import entropion6 from "/img/entropion6.jpeg";
 import blefaritis1 from "/img/blefaritis1.jpeg";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Entropion = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="container-box">
       <div className="introduction">
@@ -75,29 +79,33 @@ const Entropion = () => {
             <p>Akan ditemukan beberapa kondisi sebagai berikut :</p>
 
             <table>
-              <tr>
-                <th>Anamnesis</th>
-                <th>Pemeriksaan Fisik</th>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>Mata berair</li>
-                    <li>Nyeri</li>
-                    <li>Rasa tidak nyaman</li>
-                    <li>Rasa kemasukan benda asing</li>
-                    <li>Kelilipan</li>
-                    <li>Penglihatan kabur</li>
-                    <li>Silau</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Mata merah akibat injeksi konjungtiva</li>
-                    <li>Epiteliopati (kekeruhan lapisan epitel kornea), erosi kornea, neovaskularisasi dalam tahap yang lebih lanjut</li>
-                  </ul>
-                </td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>Anamnesis</th>
+                  <th>Pemeriksaan Fisik</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>Mata berair</li>
+                      <li>Nyeri</li>
+                      <li>Rasa tidak nyaman</li>
+                      <li>Rasa kemasukan benda asing</li>
+                      <li>Kelilipan</li>
+                      <li>Penglihatan kabur</li>
+                      <li>Silau</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Mata merah akibat injeksi konjungtiva</li>
+                      <li>Epiteliopati (kekeruhan lapisan epitel kornea), erosi kornea, neovaskularisasi dalam tahap yang lebih lanjut</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
             </table>
 
             <li>
@@ -119,11 +127,11 @@ const Entropion = () => {
               <p>
                 Pemeriksaan dilakukan dengan cara menarik palpebral inferior kea rah medial. Dilihat perubahan yang terjadi pada kantus lateral. Normal kantus lateral berbentuk lancip; hasil positif atau laxity kantus lateral adalah bila
                 kantus lateral berbentuk bulat (rounded).
-                <p>
-                  <span>- Blink Test</span>
-                </p>
-                <p>Pemeriksaan dilakukan dengan cara meminta pasien memejamkan mata secara kuat. Dikatakan positif bila terjadi entropion.</p>
               </p>
+              <p>
+                <span>- Blink Test</span>
+              </p>
+              <p>Pemeriksaan dilakukan dengan cara meminta pasien memejamkan mata secara kuat. Dikatakan positif bila terjadi entropion.</p>
             </li>
             <li>
               <span>Tatalaksana</span>
@@ -141,10 +149,19 @@ const Entropion = () => {
         <div className="article-list">
           <ul>
             <li>
-              <a href="/glaukoma">Glaukoma | Kedokteran</a>
+              <Link to="/glaukoma" onClick={handleLinkClick}>
+                Glaukoma | Kedokteran
+              </Link>
             </li>
             <li>
-              <a href="/blefaritis">Blefaritis | Kedokteran</a>
+              <Link to="/blefaritis" onClick={handleLinkClick}>
+                Blefaritis | Kedokteran
+              </Link>
+            </li>
+            <li>
+              <Link to="/ektropion" onClick={handleLinkClick}>
+                Ektropion | Kedokteran
+              </Link>
             </li>
           </ul>
         </div>

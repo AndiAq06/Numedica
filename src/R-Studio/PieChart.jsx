@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/cjs/react-router-dom";
 import pie1 from "/img/pie1.jpeg";
 import pie2 from "/img/pie2.jpeg";
 import pie3 from "/img/pie3.jpeg";
@@ -153,10 +154,10 @@ const PieChart = () => {
         <div className="article-list">
           <ul>
             <li>
-              <a href="/boxplot-in-r-studio">Boxplot | R Studio</a>
+              <Link to="/boxplot-r-studio">Boxplot | R Studio</Link>
             </li>
             <li>
-              <a href="/barplot-in-r-studio">Bar-Chart | R Studio</a>
+              <Link to="/barplot-r-studio">Bar-Chart | R Studio</Link>
             </li>
           </ul>
         </div>
