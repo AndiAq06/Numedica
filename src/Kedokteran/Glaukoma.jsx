@@ -7,11 +7,27 @@ import glukoma5 from "/img/glukoma5.jpeg";
 import glukoma6 from "/img/glukoma6.jpeg";
 import glukoma7 from "/img/glukoma7.jpeg";
 import glukoma8 from "/img/glukoma8.jpeg";
+import LinkClick from "../components/LinkClick";
 
 const Glaukoma = () => {
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0);
-  };
+  const links = [
+    {
+      id: 1,
+      title: " Entropion | Kedokteran",
+      link: "/kedokteran/entropion",
+    },
+    {
+      id: 2,
+      title: "Blefaritis | Kedokteran",
+      link: "/kedokteran/blefaritis",
+    },
+    {
+      id: 3,
+      title: "Ektropion | Kedokteran",
+      link: "/kedokteran/ektropion",
+    },
+  ];
+
   return (
     <div className="container-box">
       <div className="introduction">
@@ -223,28 +239,7 @@ const Glaukoma = () => {
         </ul>
       </div>
 
-      <div className="related-post">
-        <h2>Related Post</h2>
-        <div className="article-list">
-          <ul>
-            <li>
-              <Link to="/blefaritis" onClick={handleLinkClick}>
-                Blefaritis | Kedokteran
-              </Link>
-            </li>
-            <li>
-              <Link to="/entropion" onClick={handleLinkClick}>
-                Entropion | Kedokteran
-              </Link>
-            </li>
-            <li>
-              <Link to="/ektropion" onClick={handleLinkClick}>
-                Ektropion | Kedokteran
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <LinkClick links={links} />
     </div>
   );
 };

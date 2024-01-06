@@ -1,26 +1,15 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./Navbar";
-import Jumbotron from "./beranda/Jumbotron";
-import Card from "./beranda/card";
-import Contact from "./beranda/Contact";
 import Footer from "./Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Boxplot from "./R-Studio/Boxplot";
-import ArticleList from "./R-Studio/ArticleList";
-import ArticleKedokteranList from "./Kedokteran/ArticleKedokteranList";
-import Glaukoma from "./Kedokteran/Glaukoma";
-import Barplot from "./R-Studio/Barplot";
-import ArticleSPSSList from "./SPSS/ArticleSPSSList";
-import Steam from "./SPSS/Steam-Leaf.jsx";
-import PieChart from "./R-Studio/PieChart.jsx";
-import BoxplotSPSS from "./SPSS/BoxplotSPSS.jsx";
-import Blefaritis from "./Kedokteran/Blefaritis.jsx";
-import Entropion from "./Kedokteran/Entropion.jsx";
-import ArticlePemprogramanList from "./Pemprograman/ArticlePemprogramanList.jsx";
-import Synchronous from "./Pemprograman/Synchronous&Asynchronous.jsx";
-import Javascript from "./Pemprograman/JavascriptvsTypescript.jsx";
-import Ektropion from "./Kedokteran/Ektropion.jsx";
+import Beranda from "./components/Beranda.jsx";
+import RStudio from "./components/R-Studio.jsx";
+import Pemrograman from "./components/Pemrograman.jsx";
+import Kedokteran from "./components/Kedokteran.jsx";
+import SPSS from "./components/SPSS.jsx";
+import { StaticRouter } from "react-router-dom/cjs/react-router-dom.js";
+import Statistika from "./components/Statistika.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,74 +20,22 @@ function App() {
         <div className="App">
           <Navbar></Navbar>
           <div className="beranda">
-            <Switch>
-              <Route exact path="/">
-                <Jumbotron></Jumbotron>
-                <Card></Card>
-                <Contact></Contact>
-              </Route>
-            </Switch>
+            <Beranda />
           </div>
           <div className="R-Studio">
-            <Switch>
-              <Route path="/article-r-studio-list">
-                <ArticleList></ArticleList>
-              </Route>
-              <Route path="/boxplot-r-studio">
-                <Boxplot></Boxplot>
-              </Route>
-              <Route path="/barplot-r-studio">
-                <Barplot></Barplot>
-              </Route>
-              <Route path="/pie-chart-r-studio">
-                <PieChart></PieChart>
-              </Route>
-            </Switch>
+            <RStudio />
           </div>
           <div className="spss">
-            <Switch>
-              <Route path="/article-spss">
-                <ArticleSPSSList></ArticleSPSSList>
-              </Route>
-              <Route path="/steam-leaf-spss">
-                <Steam></Steam>
-              </Route>
-              <Route path="/boxplot-spss">
-                <BoxplotSPSS></BoxplotSPSS>
-              </Route>
-            </Switch>
+            <SPSS />
+          </div>
+          <div className="statistika">
+            <Statistika />
           </div>
           <div className="Kedokteran">
-            <Switch>
-              <Route path="/article-kedokteran-list">
-                <ArticleKedokteranList></ArticleKedokteranList>
-              </Route>
-              <Route path="/glaukoma">
-                <Glaukoma></Glaukoma>
-              </Route>
-              <Route path="/blefaritis">
-                <Blefaritis></Blefaritis>
-              </Route>
-              <Route path="/entropion">
-                <Entropion></Entropion>
-              </Route>
-              <Route path="/ektropion">
-                <Ektropion></Ektropion>
-              </Route>
-            </Switch>
+            <Kedokteran />
           </div>
           <div className="pemprograman">
-            <Switch>
-              <Route path="/article-pemprograman-list">
-                <ArticlePemprogramanList></ArticlePemprogramanList>
-              </Route>
-              <Route path="/synchronous-asynchronous">
-                <Synchronous></Synchronous>
-              </Route>
-              <Route path="/javascript-typesript">
-                <Javascript></Javascript>
-              </Route>
-            </Switch>
+            <Pemrograman />
           </div>
           <Footer></Footer>
         </div>

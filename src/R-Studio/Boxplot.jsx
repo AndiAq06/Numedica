@@ -4,8 +4,22 @@ import boxplot2 from "/img/boxplot2.png";
 import boxplot3 from "/img/boxplot3.jpeg";
 import boxplot4 from "/img/boxplot4.jpeg";
 import { Link } from "react-router-dom/cjs/react-router-dom";
+import LinkClick from "../components/LinkClick";
 
 const Boxplot = () => {
+  const links = [
+    {
+      id: 1,
+      title: " Bar-Chart | R studio",
+      link: "/r/barplot-r-studio",
+    },
+    {
+      id: 2,
+      title: "Pie Chart | R Studio",
+      link: "/r/pie-chart-r-studio",
+    },
+  ];
+
   return (
     <div className="container-box">
       <h2 className="judul">Boxplot | R studio</h2>
@@ -23,7 +37,7 @@ const Boxplot = () => {
               <span>Menunjukkan Sebaran Data </span>: Boxplot membantu dalam menunjukkan bagaimana data tersebar secara grafis. Ini memberi gambaran visual tentang sebaran nilai-nilai data dari minimum hingga maksimum.
             </li>
             <li>
-              <span>dentifikasi Posisi Nilai Tengah:</span>I Dengan menampilkan garis di dalam kotak, boxplot memvisualisasikan nilai median (nilai tengah) dari data, yang merupakan pemisah antara kuartil pertama dan kedua.
+              <span>Identifikasi Posisi Nilai Tengah:</span>I Dengan menampilkan garis di dalam kotak, boxplot memvisualisasikan nilai median (nilai tengah) dari data, yang merupakan pemisah antara kuartil pertama dan kedua.
             </li>
             <li>
               <span>Pengukuran Kuartil dan Rentang Interkuartil:</span> Diagram kotak memperlihatkan kuartil pertama (Q1) dan ketiga (Q3), yang membentuk kotak. Rentang interkuartil (IQR) dapat dihitung dari Q3 - Q1, menyoroti sebaran data
@@ -162,19 +176,8 @@ const Boxplot = () => {
           </p>
         </div>
       </div>
-      <div className="related-post">
-        <h2>Related Post</h2>
-        <div className="article-list">
-          <ul>
-            <li>
-              <Link to="/barplot-r-studio">Bar-Chart | R Studio</Link>
-            </li>
-            <li>
-              <Link to="/pie-chart-r-studio">Pie Chart | R Studio</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <LinkClick links={links} />
     </div>
   );
 };

@@ -1,7 +1,20 @@
 import { Link } from "react-router-dom/cjs/react-router-dom";
 import javascript from "/img/typescript-vs-javascript-comparison_.jpg";
+import LinkClick from "../components/LinkClick";
 
 const Javascript = () => {
+  const links = [
+    {
+      id: 1,
+      title: "Perbedaan Synchronous dan Asynchronous",
+      link: "/pemrograman/synchronous-asynchronous",
+    },
+    {
+      id: 2,
+      title: "Pie Chart | R Studio",
+      link: "/r/pie-chart-r-studio",
+    },
+  ];
   return (
     <div className="container-box">
       <h2 className="judul">JavaScript vs TypeScript | Mana Lebih Sakti??</h2>
@@ -85,19 +98,7 @@ const Javascript = () => {
         merupakan alat berharga dalam toolkit seorang pengembang, masing-masing melayani kebutuhan khusus dalam dunia pengembangan web.
       </p>
 
-      <div className="related-post">
-        <h2>Related Post</h2>
-        <div className="article-list">
-          <ul>
-            <li>
-              <Link to="/synchronous-asynchronous">Perbedaan Synchronous dan Asynchronous</Link>
-            </li>
-            <li>
-              <Link to="/pie-chart-r-studio">Pie Chart | R Studio</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <LinkClick links={links} />
     </div>
   );
 };

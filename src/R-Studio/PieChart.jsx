@@ -4,14 +4,27 @@ import pie2 from "/img/pie2.jpeg";
 import pie3 from "/img/pie3.jpeg";
 import pie4 from "/img/pie4.jpeg";
 import pie5 from "/img/pie5.png";
+import LinkClick from "../components/LinkClick";
 
 const PieChart = () => {
+  const links = [
+    {
+      id: 1,
+      title: " Boxplot | R studio",
+      link: "/r/boxplot-r-studio",
+    },
+    {
+      id: 2,
+      title: " Bar-Chart | R studio",
+      link: "/r/barplot-r-studio",
+    },
+  ];
   return (
     <div className="container-box">
       <h2 className="judul">Pie Charts | R studio</h2>
       <div className="content">
         <div className="introduction">
-          <h4>Pengertian Pie Charts</h4>
+          <h3>Pengertian Pie Charts</h3>
           <img src={pie5} />
           <p>
             Pie chart, atau dalam bahasa Indonesia sering disebut dengan "diagram lingkaran", adalah jenis grafik yang menampilkan data dalam bentuk lingkaran yang terbagi menjadi beberapa "iris" atau "slices". Setiap iris mewakili proporsi
@@ -30,7 +43,7 @@ const PieChart = () => {
               <span>Perbandingan Proporsi:</span>Memungkinkan perbandingan antara bagian-bagian yang membentuk keseluruhan.
             </li>
             <li>
-              <span>Menyoroti Bagian Penting: </span> DMembantu dalam menyoroti bagian yang signifikan dalam konteks keseluruhan data.
+              <span>Menyoroti Bagian Penting: </span>Membantu dalam menyoroti bagian yang signifikan dalam konteks keseluruhan data.
             </li>
           </ol>
         </div>
@@ -149,19 +162,8 @@ const PieChart = () => {
           <img className="plot" src={pie4} />
         </div>
       </div>
-      <div className="related-post">
-        <h2>Related Post</h2>
-        <div className="article-list">
-          <ul>
-            <li>
-              <Link to="/boxplot-r-studio">Boxplot | R Studio</Link>
-            </li>
-            <li>
-              <Link to="/barplot-r-studio">Bar-Chart | R Studio</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <LinkClick links={links} />
     </div>
   );
 };

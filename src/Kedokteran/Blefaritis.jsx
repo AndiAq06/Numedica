@@ -5,11 +5,26 @@ import blefaritis3 from "/img/blefaritis3.jpeg";
 import blefaritis4 from "/img/blefaritis4.jpeg";
 import blefaritis5 from "/img/blefaritis5.jpeg";
 import blefaritis6 from "/img/blefaritis6.jpeg";
+import LinkClick from "../components/LinkClick";
 
 const Blefaritis = () => {
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0);
-  };
+  const links = [
+    {
+      id: 1,
+      title: " Glaukoma | Kedokteran",
+      link: "/kedokteran/glaukoma",
+    },
+    {
+      id: 2,
+      title: "Entropion | Kedokteran",
+      link: "/kedokteran/entropion",
+    },
+    {
+      id: 3,
+      title: "Ektropion | Kedokteran",
+      link: "/kedokteran/ektropion",
+    },
+  ];
   return (
     <div className="container-box">
       <div className="introduction">
@@ -97,28 +112,7 @@ const Blefaritis = () => {
         </ol>
       </div>
 
-      <div className="related-post">
-        <h2>Related Post</h2>
-        <div className="article-list">
-          <ul>
-            <li>
-              <Link to="/glaukoma" onClick={handleLinkClick}>
-                Glaukoma | Kedokteran
-              </Link>
-            </li>
-            <li>
-              <Link to="/entropion" onClick={handleLinkClick}>
-                Entropion | Kedokteran
-              </Link>
-            </li>
-            <li>
-              <Link to="/ektropion" onClick={handleLinkClick}>
-                Ektropion | Kedokteran
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <LinkClick links={links} />
     </div>
   );
 };

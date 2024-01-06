@@ -6,11 +6,27 @@ import entropion5 from "/img/entropion5.jpeg";
 import entropion6 from "/img/entropion6.jpeg";
 import blefaritis1 from "/img/blefaritis1.jpeg";
 import { Link } from "react-router-dom/cjs/react-router-dom";
+import LinkClick from "../components/LinkClick";
 
 const Entropion = () => {
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0);
-  };
+  const links = [
+    {
+      id: 1,
+      title: " Glaukoma | Kedokteran",
+      link: "/kedokteran/glaukoma",
+    },
+    {
+      id: 2,
+      title: "Blefaritis | Kedokteran",
+      link: "/kedokteran/blefaritis",
+    },
+    {
+      id: 3,
+      title: "Ektropion | Kedokteran",
+      link: "/kedokteran/ektropion",
+    },
+  ];
+
   return (
     <div className="container-box">
       <div className="introduction">
@@ -144,28 +160,7 @@ const Entropion = () => {
         </ol>
       </div>
 
-      <div className="related-post">
-        <h2>Related Post</h2>
-        <div className="article-list">
-          <ul>
-            <li>
-              <Link to="/glaukoma" onClick={handleLinkClick}>
-                Glaukoma | Kedokteran
-              </Link>
-            </li>
-            <li>
-              <Link to="/blefaritis" onClick={handleLinkClick}>
-                Blefaritis | Kedokteran
-              </Link>
-            </li>
-            <li>
-              <Link to="/ektropion" onClick={handleLinkClick}>
-                Ektropion | Kedokteran
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <LinkClick links={links} />
     </div>
   );
 };

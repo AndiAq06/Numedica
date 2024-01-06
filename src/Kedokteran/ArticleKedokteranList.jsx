@@ -5,27 +5,27 @@ const ArticleList = () => {
     <div className="blog-list">
       <h2 className="article">All Article!!</h2>
       <div className="blog-preview">
-        <Link to="glaukoma">
+        <Link to="/kedokteran/glaukoma">
           <h2>Glaukoma</h2>
           <p>Written by Aqilah Nahdah</p>
         </Link>
       </div>
       <div className="blog-preview">
-        <Link to="blefaritis">
+        <Link to="/kedokteran/blefaritis">
           <h2>Blefaritis</h2>
           <p>Written by Aqilah Nahdah</p>
         </Link>
       </div>
 
       <div className="blog-preview">
-        <Link to="entropion">
+        <Link to="/kedokteran/entropion">
           <h2>Entropion</h2>
           <p>Written by Aqilah Nahdah</p>
         </Link>
       </div>
 
       <div className="blog-preview">
-        <Link to="ektropion">
+        <Link to="/kedokteran/ektropion">
           <h2>Ektropion</h2>
           <p>Written by Aqilah Nahdah</p>
         </Link>

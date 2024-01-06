@@ -5,8 +5,22 @@ import barplot3 from "/img/barplot3.jpeg";
 import barplot4 from "/img/barplot4.jpeg";
 import barplot5 from "/img/barplot5.jpeg";
 import barplot6 from "/img/barplot6.png";
+import LinkClick from "../components/LinkClick";
 
 const Barplot = () => {
+  const links = [
+    {
+      id: 1,
+      title: " Boxplot | R studio",
+      link: "/r/boxplot-r-studio",
+    },
+    {
+      id: 2,
+      title: "Pie Chart | R Studio",
+      link: "/r/pie-chart-r-studio",
+    },
+  ];
+
   return (
     <div className="container-box">
       <h2 className="judul">Bar-Chart | R studio</h2>
@@ -209,19 +223,7 @@ const Barplot = () => {
         </div>
       </div>
 
-      <div className="related-post">
-        <h2>Related Post</h2>
-        <div className="article-list">
-          <ul>
-            <li>
-              <Link to="/boxplot-r-studio">Boxplot | R Studio</Link>
-            </li>
-            <li>
-              <Link to="/pie-chart-r-studio">Pie Chart | R Studio</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <LinkClick links={links} />
     </div>
   );
 };

@@ -94,18 +94,19 @@ const Navbar = () => {
               </a>
               {showDropdown && (
                 <div className="dropdown-content">
-                  <Link to="/article-r-studio-list">R</Link>
-                  <Link to="/article-spss">SPSS</Link>
+                  <Link to="/r/article-r-studio-list">R</Link>
+                  <Link to="/spss/article-spss">SPSS</Link>
+                  <Link to="/statistika/article-statistika">Statistika</Link>
                 </div>
               )}
             </li>
             <li>
-              <Link to="/article-kedokteran-list" className="menu">
+              <Link to="/kedokteran/article-kedokteran-list" className="menu">
                 Kedokteran
               </Link>
             </li>
             <li>
-              <Link to="/article-pemprograman-list" className="menu">
+              <Link to="/pemrograman/article-pemprograman-list" className="menu">
                 Pemprograman
               </Link>
             </li>
@@ -120,7 +121,7 @@ const Navbar = () => {
 
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
-        <h1>Numedica</h1>
+        <h1 style={{ cursor: "pointer" }}>Numedica</h1>
       </div>
     </nav>
   );
