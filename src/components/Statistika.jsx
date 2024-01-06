@@ -3,6 +3,8 @@ import ArticleStatistikaList from "../Statistika/ArticleStatistikaList";
 import Parametrik from "../Statistika/Parametrik";
 import Statistik from "../Statistika/Statistik";
 import Descriptive from "../Statistika/Descriptive";
+import NonSamplingError from "../Statistika/NonSamplingError";
+import SamplingError from "../Statistika/SamplingError";
 
 const Statistika = () => {
   return (
@@ -18,6 +20,12 @@ const Statistika = () => {
       </Route>
       <Route path="/statistika/descriptive-inferensia">
         <Descriptive />
+      </Route>
+      <Route path="/statistika/sampling-error">
+        <SamplingError />
+      </Route>
+      <Route path="/statistika/non-sampling-error">
+        <NonSamplingError />
       </Route>
     </Switch>
   );

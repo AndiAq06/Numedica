@@ -1,29 +1,51 @@
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { useState } from "react";
+import DynamicPagination from "../Pagination/DynamicPagination";
 
 const ArticleStatistikaList = () => {
-  return (
-    <div className="blog-list">
-      <h2 className="article">All Article!!</h2>
-      <div className="blog-preview">
-        <Link to="statistik">
-          <h2>Statistika</h2>
-          <p>Written by Andi Ardiansyah Nasir</p>
-        </Link>
-      </div>
-      <div className="blog-preview">
-        <Link to="parametrik-nonparametrik">
-          <h2>Pengertian Statistika Parametrik dan Nonparametrik</h2>
-          <p>Written by Andi Ardiansyah Nasir</p>
-        </Link>
-      </div>
-      <div className="blog-preview">
-        <Link to="/statistika/descriptive-inferensia">
-          <h2>Pengertian Statistika Parametrik dan Nonparametrik</h2>
-          <p>Written by Andi Ardiansyah Nasir</p>
-        </Link>
-      </div>
-    </div>
-  );
+  const [currentPage, setCurrentPage] = useState(1);
+  const articles = [
+    {
+      id: 1,
+      title: "Statistika",
+      author: "Andi Ardiansyah Nasir",
+      link: "statistik",
+    },
+    {
+      id: 2,
+      title: "Pengertian Statistika Parametrik dan Nonparametrik",
+      author: "Andi Ardiansyah Nasir",
+      link: "/statistika/parametrik-nonparametrik",
+    },
+    {
+      id: 3,
+      title: "Pengertian Statistika Deskriptif dan Inferensia",
+      author: "Andi Ardiansyah Nasir",
+      link: "/statistika/descriptive-inferensia",
+    },
+    {
+      id: 4,
+      title: "Sampling Error",
+      author: "Andi Ardiansyah Nasir",
+      link: "/statistika/sampling-error",
+    },
+    {
+      id: 5,
+      title: "Non-Sampling Error",
+      author: "Andi Ardiansyha Nasir",
+      link: "/statistika/non-sampling-error",
+    },
+  ];
+
+  const itemsPerPageConfig = {
+    1: 20,
+
+    // Tambahkan konfigurasi jumlah konten per halaman lainnya di sini
+  };
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+  return <DynamicPagination articles={articles} itemsPerPageConfig={itemsPerPageConfig} currentPage={currentPage} onPageChange={handlePageChange} />;
 };
 
 export default ArticleStatistikaList;
