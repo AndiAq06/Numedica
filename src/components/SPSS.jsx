@@ -5,6 +5,7 @@ import BoxplotSPSS from "../SPSS/BoxplotSPSS";
 import Dotplot from "../SPSS/Dotplot";
 import HistogramSPSS from "../SPSS/HistogramSPSS";
 import PieChartSPSS from "../SPSS/PieChartSPSS";
+import ScatterSPSS from "../SPSS/ScatterSPSS";
 
 const SPSS = () => {
   return (
@@ -26,6 +27,9 @@ const SPSS = () => {
       </Route>
       <Route path="/spss/pie-chart-spss">
         <PieChartSPSS />
+      </Route>
+      <Route path="/spss/scatter-plot-spss">
+        <ScatterSPSS />
       </Route>
     </Switch>
   );
