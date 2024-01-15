@@ -110,10 +110,15 @@ const Navbar = () => {
                 Pemprograman
               </Link>
             </li>
-            <li>
-              <a href="#" className="menu">
+            <li className={`dropdown menu ${showDropdown ? "open" : ""}`} onClick={toggleDropdown}>
+              <a href="#" className="dropbtn menu">
                 Data Sciense
               </a>
+              {showDropdown && (
+                <div className="dropdown-content">
+                  <Link to="/ai/article-artificial-intelligence">Artificial Intelligence</Link>
+                </div>
+              )}
             </li>
           </ul>
         </div>

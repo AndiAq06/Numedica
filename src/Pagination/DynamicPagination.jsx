@@ -16,7 +16,6 @@ const DynamicPagination = ({ articles, itemsPerPageConfig, defaultPageTitle, cur
 
   const pageTitles = {
     1: defaultPageTitle,
-    // Tambahkan judul halaman lainnya di sini jika perlu
   };
 
   return (

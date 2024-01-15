@@ -10,6 +10,7 @@ import Kedokteran from "./components/Kedokteran.jsx";
 import SPSS from "./components/SPSS.jsx";
 import { StaticRouter } from "react-router-dom/cjs/react-router-dom.js";
 import Statistika from "./components/Statistika.jsx";
+import AI from "./components/AI.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -36,6 +37,9 @@ function App() {
           </div>
           <div className="pemprograman">
             <Pemrograman />
+          </div>
+          <div className="ai">
+            <AI />
           </div>
           <Footer></Footer>
         </div>
