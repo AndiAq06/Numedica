@@ -4,6 +4,7 @@ import Glaukoma from "../Kedokteran/Glaukoma";
 import Blefaritis from "../Kedokteran/Blefaritis";
 import Entropion from "../Kedokteran/Entropion";
 import Ektropion from "../Kedokteran/Ektropion";
+import Hordeolum from "../Kedokteran/Hordeolum";
 
 const Kedokteran = () => {
   return (
@@ -22,6 +23,9 @@ const Kedokteran = () => {
       </Route>
       <Route path="/kedokteran/ektropion">
         <Ektropion />
+      </Route>
+      <Route path="/kedokteran/hordeolum">
+        <Hordeolum />
       </Route>
     </Switch>
   );

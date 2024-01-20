@@ -30,7 +30,13 @@ const ArticleList = () => {
           <p>Written by Aqilah Nahdah</p>
         </Link>
       </div>
-      <div className="blog-preview"></div>
+
+      <div className="blog-preview">
+        <Link to="/kedokteran/hordeolum">
+          <h2>Hordeolum</h2>
+          <p>Written by Aqilah Nahdah</p>
+        </Link>
+      </div>
     </div>
   );
 };
