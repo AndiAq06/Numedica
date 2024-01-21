@@ -12,6 +12,18 @@ const ArticleAIList = () => {
       author: "Andi Ardiansyah Nasir",
       link: "/ai/artificial-intelligence",
     },
+    {
+      id: 2,
+      title: "AI vs. Machine Learning vs. Deep Learning vs. Neural Networks",
+      author: "Andi Ardiansyah Nasir",
+      link: "/ai/ai-ml-dl",
+    },
+    {
+      id: 3,
+      title: "Supervised vs. Unsupervised Learning: What's the Difference?",
+      author: "Andi Ardiansyah Nasir",
+      link: "/ai/supervised-vs-unsupervised-learning",
+    },
   ];
 
   const itemsPerPageConfig = {

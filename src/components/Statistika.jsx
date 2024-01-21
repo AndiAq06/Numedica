@@ -5,6 +5,7 @@ import Statistik from "../Statistika/Statistik";
 import Descriptive from "../Statistika/Descriptive";
 import NonSamplingError from "../Statistika/NonSamplingError";
 import SamplingError from "../Statistika/SamplingError";
+import TypeData from "../Statistika/TypeData";
 
 const Statistika = () => {
   return (
@@ -26,6 +27,9 @@ const Statistika = () => {
       </Route>
       <Route path="/statistika/non-sampling-error">
         <NonSamplingError />
+      </Route>
+      <Route path="/statistika/tipe-data">
+        <TypeData />
       </Route>
     </Switch>
   );

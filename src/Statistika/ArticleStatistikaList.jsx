@@ -31,8 +31,14 @@ const ArticleStatistikaList = () => {
     {
       id: 5,
       title: "Non-Sampling Error",
-      author: "Andi Ardiansyha Nasir",
+      author: "Andi Ardiansyah Nasir",
       link: "/statistika/non-sampling-error",
+    },
+    {
+      id: 6,
+      title: "Jenis-Jenis Tipe Data Dalam Statistika",
+      author: "Andi Ardiansyah Nasir",
+      link: "/statistika/tipe-data",
     },
   ];
 
