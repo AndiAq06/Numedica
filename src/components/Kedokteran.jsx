@@ -5,6 +5,8 @@ import Blefaritis from "../Kedokteran/Blefaritis";
 import Entropion from "../Kedokteran/Entropion";
 import Ektropion from "../Kedokteran/Ektropion";
 import Hordeolum from "../Kedokteran/Hordeolum";
+import Pterigium from "../Kedokteran/Pterigium";
+import Pinguekulitis from "../Kedokteran/Pinguekulitis";
 
 const Kedokteran = () => {
   return (
@@ -26,6 +28,12 @@ const Kedokteran = () => {
       </Route>
       <Route path="/kedokteran/hordeolum">
         <Hordeolum />
+      </Route>
+      <Route path="/kedokteran/pterigium">
+        <Pterigium />
+      </Route>
+      <Route path="/kedokteran/pinguekulitis">
+        <Pinguekulitis />
       </Route>
     </Switch>
   );

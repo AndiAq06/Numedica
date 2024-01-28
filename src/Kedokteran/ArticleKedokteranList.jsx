@@ -37,6 +37,19 @@ const ArticleList = () => {
           <p>Written by Aqilah Nahdah</p>
         </Link>
       </div>
+
+      <div className="blog-preview">
+        <Link to="/kedokteran/pterigium">
+          <h2>Pterigium</h2>
+          <p>Written by Aqilah Nahdah</p>
+        </Link>
+      </div>
+      <div className="blog-preview">
+        <Link to="/kedokteran/pinguekulitis">
+          <h2>Pinguekulitis</h2>
+          <p>Written by Aqilah Nahdah</p>
+        </Link>
+      </div>
     </div>
   );
 };
