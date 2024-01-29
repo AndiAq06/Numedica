@@ -3,6 +3,7 @@ import ArticleAIList from "../AI/ArtcleAIList";
 import ArtificialIntelligence from "../AI/ArtificialIntelligence";
 import Supervised from "../AI/Supervised";
 import AI_ML_DL from "../AI/AI_ML_DL";
+import Uninformed from "../AI/Uninformed";
 
 const AI = () => {
   return (
@@ -18,6 +19,9 @@ const AI = () => {
       </Route>
       <Route path="/ai/ai-ml-dl">
         <AI_ML_DL />
+      </Route>
+      <Route path="/ai/uninformed-search-algorithms">
+        <Uninformed />
       </Route>
     </Switch>
   );

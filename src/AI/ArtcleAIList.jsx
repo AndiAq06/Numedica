@@ -24,6 +24,12 @@ const ArticleAIList = () => {
       author: "Andi Ardiansyah Nasir",
       link: "/ai/supervised-vs-unsupervised-learning",
     },
+    {
+      id: 4,
+      title: "Uninformed Search Algorithms",
+      author: "Andi Ardiansyah Nasir",
+      link: "/ai/uninformed-search-algorithms",
+    },
   ];
 
   const itemsPerPageConfig = {
