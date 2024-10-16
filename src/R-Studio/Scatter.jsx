@@ -26,17 +26,17 @@ const Scatter = () => {
           <p>
             <span>- Korelasi Positif</span> Jika titik-titik cenderung bergerak dari kiri bawah ke kanan atas, maka ada kemungkinan terdapat korelasi positif antara kedua variabel.
           </p>
-          <img src={scatter1} alt="image scatter 1" />
+          <img src={scatter1} alt="scatter 1" />
           <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://learn.nural.id/course/statistics/regresi-linier/scatterplot </p>
           <p>
             <span>- Korelasi Negatif</span> Jika titik-titik cenderung bergerak dari kiri atas ke kanan bawah, maka ada kemungkinan terdapat korelasi negatif antara kedua variabel.
           </p>
-          <img src={scatter2} alt="image scatter 2" />
+          <img src={scatter2} alt="scatter 2" />
           <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://learn.nural.id/course/statistics/regresi-linier/scatterplot </p>
           <p>
             <span>- Tidak Ada Korelasi</span> Jika titik-titik tersebar acak di seluruh plot tanpa pola khusus, ini menunjukkan bahwa kedua variabel tersebut mungkin tidak memiliki hubungan.
           </p>
-          <img src={scatter3} alt="image scatter 3" />
+          <img src={scatter3} alt="scatter 3" />
           <p style={{ fontStyle: "italic", marginBottom: "20px", textAlign: "center" }}>src: https://learn.nural.id/course/statistics/regresi-linier/scatterplot </p>
         </div>
 
@@ -84,7 +84,7 @@ const Scatter = () => {
           `}
               </code>
             </pre>
-            <img className="image" src={dataset2} alt="image dataset " />
+            <img className="image" src={dataset2} alt="dataset" />
 
             <h4>Membuat Scatter Plot</h4>
             <pre className="tutorial">
@@ -102,7 +102,7 @@ const Scatter = () => {
           `}
               </code>
             </pre>
-            <img src={scatter4} alt="image scatter 4" />
+            <img src={scatter4} alt="scatter 4" />
           </div>
           <h3>Scatterplot Matriks</h3>
           <p>Ketika kita memiliki dua atau lebih variabel dan kita ingin melihat korelasi antara satu variabel dengan variabel lain kita menggunakan scatterplot matiks</p>
@@ -128,7 +128,7 @@ const Scatter = () => {
           `}
               </code>
             </pre>
-            <img src={scatter5} alt="image scatter 5" />
+            <img src={scatter5} alt="scatter 5" />
             <p>"~wt + mpg + disp + cyl" menunjukkan bahwa kita ingin membuat matriks scatterplot yang membandingkan hubungan antara variabel 'wt', 'mpg', 'disp', dan 'cyl' dari dataset 'mtcars'</p>
           </div>
           <div className="dataset">
@@ -145,7 +145,7 @@ const Scatter = () => {
           `}
               </code>
             </pre>
-            <img src={scatter6} alt="image scatter 6" />
+            <img src={scatter6} alt="scatter 6" />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import DynamicPagination from "../Pagination/DynamicPagination";
 
 const ArticleAIList = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [contentPerPage] = useState(10); // Ubah jumlah konten per halaman sesuai kebutuhan
+  // const [contentPerPage] = useState(10); // Ubah jumlah konten per halaman sesuai kebutuhan
   const articles = [
     {
       id: 1,
